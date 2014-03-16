@@ -13,9 +13,9 @@ http://www-meg.phys.cmu.edu/~williams/wiki-ruby-pwa/index.php/Download_and_Insta
 ### Modified to make it compiles on osx 10.9.2
 
 ```sh
-🍪 cd ruby-pwa
-🍪 RUBYINC=~/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/i686-darwin13.1.0 RUBYLIB=~/.rvm/rubies/ruby-1.8.7-p374/lib make -C pwa/src
-🍪 RUBYLIB=. irb
+$ cd ruby-pwa
+$ RUBYINC=~/.rvm/rubies/ruby-1.8.7-p374/lib/ruby/1.8/i686-darwin13.1.0 RUBYLIB=~/.rvm/rubies/ruby-1.8.7-p374/lib make -C pwa/src
+$ RUBYLIB=. irb
 1.8.7-p374 :001 > require 'pwa/dataset'
 => true 
 ```
