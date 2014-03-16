@@ -1,5 +1,5 @@
 #!gnumake
-LD      = /usr/local/Cellar/gcc46/4.6.4/bin/g++-4.6
+LD      = /usr/local/opt/gcc46/bin/g++-4.6
 FLAGS   = -O2 -Wall -fPIC 
 INCLUDE = -I . -I$(RUBYINC)
 #
@@ -13,7 +13,7 @@ objects/%.o: %.cpp
 	$(LD) $(FLAGS) $(INCLUDE) -c -o objects/$*.o $*.cpp
 #
 ../lib/$(OS_NAME)/%.bundle: objects/%.o
-	/usr/local/Cellar/gcc46/4.6.4/bin/g++-4.6 -dynamic -bundle objects/$*.o -o ../lib/$(OS_NAME)/$*.bundle -L$(RUBYLIB) -lruby -ldl -lm -lc
+	$(LD) -dynamic -bundle objects/$*.o -o ../lib/$(OS_NAME)/$*.bundle -L$(RUBYLIB) -lruby -ldl -lm -lc
 	@chmod 555 ../lib/$(OS_NAME)/$*.bundle
 #
 %.o: %.cpp
