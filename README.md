@@ -1,3 +1,11 @@
+### Ruby PWA
+
+The ruby-pwa package is a very flexible Partial Wave Analysis software package. It is written in the Ruby language; however, it contains a number of C++ extensions that do all of the heavy lifting. It also utilizes XML for all of its IO needs.
+
+The majority of the code was written by Mike Williams with the exception of the normalization integral generator which was written by Mike McCracken(based on an earlier version by Doug Applegate). Matt Bellisis also a major contributor to the package. So, if you have problems with normalization integral generation, contact Mike McCracken, otherwise, contact Mike Williams.
+
+Mike Bellis http://www-meg.phys.cmu.edu/~bellis
+
 ### Original Source Code
 
 http://www-meg.phys.cmu.edu/~williams/wiki-ruby-pwa/index.php/Download_and_Install
